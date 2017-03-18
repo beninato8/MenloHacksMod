@@ -1,6 +1,7 @@
 package beninato.menlohacks;
 
 import beninato.menlohacks.init.ModBlocks;
+import beninato.menlohacks.init.ModCrafting;
 import beninato.menlohacks.init.ModItems;
 import beninato.menlohacks.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -41,6 +42,8 @@ public class FirstMod
 	{
 		System.out.println("Init - fishes");
 		proxy.init();
+		
+		ModCrafting.register();
 	}
 	
 	@EventHandler
