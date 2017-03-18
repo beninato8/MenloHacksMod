@@ -14,7 +14,8 @@ public class Reference
 	{ 
 		DONUT("donut", "ItemDonut"),
 		COFFEE("coffee", "ItemCoffee"),
-		COFFEE_BEAN("coffeeBean", "ItemCoffeeBean");
+		COFFEE_BEAN("coffeeBean", "ItemCoffeeBean"),
+		RUBY("ruby", "ItemRuby");
 
 		private String unlocalizedName;
 		private String registryName;

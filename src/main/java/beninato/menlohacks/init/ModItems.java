@@ -3,6 +3,7 @@ package beninato.menlohacks.init;
 import beninato.menlohacks.items.ItemCoffee;
 import beninato.menlohacks.items.ItemCoffeeBean;
 import beninato.menlohacks.items.ItemDonut;
+import beninato.menlohacks.items.ItemRuby;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -14,12 +15,14 @@ public class ModItems
 	public static Item donut;
 	public static Item coffee;
 	public static Item coffeeBean;
+	public static Item ruby;
 	
 	public static void init()
 	{
 		donut = new ItemDonut();
 		coffee = new ItemCoffee();
 		coffeeBean = new ItemCoffeeBean();
+		ruby = new ItemRuby();
 	}
 	
 	public static void register()
@@ -27,6 +30,7 @@ public class ModItems
 		GameRegistry.register(donut);
 		GameRegistry.register(coffee);
 		GameRegistry.register(coffeeBean);
+		GameRegistry.register(ruby);
 	}
 	
 	public static void registerRenders()
@@ -34,6 +38,7 @@ public class ModItems
 		registerRender(donut);
 		registerRender(coffee);
 		registerRender(coffeeBean);
+		registerRender(ruby);
 	}
 	
 	private static void registerRender(Item item)

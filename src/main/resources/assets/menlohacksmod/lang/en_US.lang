@@ -1,6 +1,7 @@
 item.donut.name=Donut
 item.coffee.name=Coffee
 item.coffeeBean.name=Coffee Bean
+item.ruby.name=Ruby
 
 tile.donutBox.name=Donut Box
 tile.rubyOre.name=Ruby Ore
