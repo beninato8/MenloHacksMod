@@ -19,6 +19,7 @@ public class BlockRubyOre extends Block
 		setUnlocalizedName(Reference.FirstModBlocks.RUBY_ORE.getUnlocalizedName());
 		setRegistryName(Reference.FirstModBlocks.RUBY_ORE.getRegistryName());
 		setCreativeTab(FirstMod.CREATIVE_TAB);
+		setHardness(2.0F);
 	}
 	public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
