@@ -13,7 +13,8 @@ public class Reference
 	public static enum FirstModItems 
 	{ 
 		DONUT("donut", "ItemDonut"),
-		COFFEE("coffee", "ItemCoffee");
+		COFFEE("coffee", "ItemCoffee"),
+		COFFEE_BEAN("coffeeBean", "ItemCoffeeBean");
 
 		private String unlocalizedName;
 		private String registryName;
@@ -36,7 +37,8 @@ public class Reference
 	
 	public static enum FirstModBlocks
 	{
-		DONUTBOX("donutBox", "BlockDonutBox");
+		DONUT_BOX("donutBox", "BlockDonutBox"),
+		RUBY_ORE("rubyOre", "BlockRubyOre");
 		
 		private String unlocalizedName;
 		private String registryName;

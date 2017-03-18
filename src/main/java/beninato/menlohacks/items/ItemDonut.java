@@ -1,5 +1,6 @@
 package beninato.menlohacks.items;
 
+import beninato.menlohacks.FirstMod;
 import beninato.menlohacks.Reference;
 import net.minecraft.item.ItemFood;
 import net.minecraft.potion.PotionEffect;
@@ -11,7 +12,7 @@ public class ItemDonut extends ItemFood
 		super(5, 10f, false);
 		setUnlocalizedName(Reference.FirstModItems.DONUT.getUnlocalizedName());
 		setRegistryName(Reference.FirstModItems.DONUT.getRegistryName());
-		
+		setCreativeTab(FirstMod.CREATIVE_TAB);
 	}
 	/*public ItemFood setPotionEffect(PotionEffect p_185070_1_, float p_185070_2_)
     {

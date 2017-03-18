@@ -1,4 +1,8 @@
 item.donut.name=Donut
 item.coffee.name=Coffee
+item.coffeeBean.name=Coffee Bean
 
 tile.donutBox.name=Donut Box
+tile.rubyOre.name=Ruby Ore
+
+itemGroup.tabHackaton=Hackathon Mod

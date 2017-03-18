@@ -1,6 +1,7 @@
 package beninato.menlohacks.init;
 
 import beninato.menlohacks.blocks.BlockDonutBox;
+import beninato.menlohacks.blocks.BlockRubyOre;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -12,20 +13,24 @@ public class ModBlocks
 {
 	
 	public static Block donutBox;
+	public static Block rubyOre;
 	
 	public static void init()
 	{
 		donutBox = new BlockDonutBox();
+		rubyOre = new BlockRubyOre();
 	}
 	
 	public static void register()
 	{
 		registerBlock(donutBox);
+		registerBlock(rubyOre);
 	}
 	
 	private static void registerBlock(Block block)
 	{
 		GameRegistry.register(donutBox);
+		GameRegistry.register(rubyOre);
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
@@ -34,6 +39,7 @@ public class ModBlocks
 	public static void registerRenders()
 	{
 		registerRender(donutBox);
+		registerRender(rubyOre);
 	}
 	
 	private static void registerRender(Block block)
