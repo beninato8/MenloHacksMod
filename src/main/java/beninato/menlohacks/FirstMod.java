@@ -1,5 +1,6 @@
 package beninato.menlohacks;
 
+import beninato.menlohacks.init.ModBlocks;
 import beninato.menlohacks.init.ModItems;
 import beninato.menlohacks.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +31,9 @@ public class FirstMod
 		
 		ModItems.init();
 		ModItems.register();
+		
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 	
 	@EventHandler

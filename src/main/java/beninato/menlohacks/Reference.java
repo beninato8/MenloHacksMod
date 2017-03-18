@@ -12,11 +12,35 @@ public class Reference
 
 	public static enum FirstModItems 
 	{ 
-		DONUT("donut", "ItemDonut");
+		DONUT("donut", "ItemDonut"),
+		COFFEE("coffee", "ItemCoffee");
 
 		private String unlocalizedName;
 		private String registryName;
 		FirstModItems(String unlocalizedName, String registryName)
+		{
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+
+		public String getUnlocalizedName() 
+		{
+			return unlocalizedName;
+		}
+
+		public String getRegistryName() 
+		{
+			return registryName;
+		}
+	}
+	
+	public static enum FirstModBlocks
+	{
+		DONUTBOX("donutBox", "BlockDonutBox");
+		
+		private String unlocalizedName;
+		private String registryName;
+		FirstModBlocks(String unlocalizedName, String registryName)
 		{
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
