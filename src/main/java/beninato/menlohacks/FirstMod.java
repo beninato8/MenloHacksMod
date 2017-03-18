@@ -1,5 +1,6 @@
 package beninato.menlohacks;
 
+import beninato.menlohacks.init.ModItems;
 import beninato.menlohacks.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -25,18 +26,22 @@ public class FirstMod
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
-		System.out.println("PreInit");
+		System.out.println("PreInit - meoooooowwww");
+		
+		ModItems.init();
+		ModItems.register();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-		System.out.println("Init");
+		System.out.println("Init - fishes");
+		proxy.init();
 	}
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		System.out.println("PostInit");
+		System.out.println("PostInit - blublllllllllllllllllll");
 	}
 }
