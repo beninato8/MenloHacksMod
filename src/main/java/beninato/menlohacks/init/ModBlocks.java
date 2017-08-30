@@ -29,8 +29,7 @@ public class ModBlocks
 	
 	private static void registerBlock(Block block)
 	{
-		GameRegistry.register(donutBox);
-		GameRegistry.register(rubyOre);
+		GameRegistry.register(block);
 		ItemBlock item = new ItemBlock(block);
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);

@@ -13,6 +13,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.util.BlockRenderLayer;
 
 public class BlockDonutBox extends Block {
 
@@ -36,4 +37,21 @@ public class BlockDonutBox extends Block {
     {
         return 9;
     }
+	@Override
+	public boolean isFullCube(IBlockState state) 
+	{
+		return false;
+	}
+	
+	@Override
+	public boolean isOpaqueCube(IBlockState state) 
+	{
+		return false;
+	}
+	
+	@Override
+	public BlockRenderLayer getBlockLayer() {
+		// TODO Auto-generated method stub
+		return BlockRenderLayer.TRANSLUCENT;
+	}
 }

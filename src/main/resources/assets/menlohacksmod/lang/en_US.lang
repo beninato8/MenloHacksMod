@@ -7,4 +7,4 @@ item.rubySword.name=Ruby Sword
 tile.donutBox.name=Donut Box
 tile.rubyOre.name=Ruby Ore
 
-itemGroup.tabHackaton=Hackathon Mod
+itemGroup.tabHackathon.name=Hackathon Mod
